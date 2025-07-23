@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JASWANTH|PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+      
+   /* Full STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* NAV SECTION */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px #0ff;
+}
+
+nav a {
+  color: #0ff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+section {
+  padding: 100px 45px;
+  min-height: 70vh;
+}
+
+/* HOME SECTION */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-text {
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.home-text h2 {
+  font-size: 36px;
+  color: #0ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #0FF;
+}
+
+.home-text p {
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.home-text button {
+  padding: 10px 20px;
+  border: none;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.home-text button:hover {
+  background: #000;
+  color: #0ff;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.download-btn {
+  margin-left: 0px;
+  padding: 10px 12px;
+  background: #0ff;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0ff;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #000;
+  color: #0ff;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.home-img img {
+  max-width: 300px;
+  border-radius: 90%;
+  box-shadow: 0 0 20px #0ff;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.about-full {
+  border: 1px solid #0ff;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  color: #0FF;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-me {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;      
+}
+
+.intro-text {
+  display: flex;
+  color: #FFF;
+  max-width: 1100px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 12px;
+}
+
+.tools-full {
+  border: 1px solid #0ff;
+  width: 100%;
+  max-width: 1390px;
+  height: auto;
+  color: #0FF;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tools-title {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;  
+}
+
+.circular-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-box:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 15px #0ff;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(#0ff var(--percent), #222 var(--percent));
+  box-shadow: 0 0 15px #0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.circle:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 15px #0ff;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #000;
+  z-index: 1;
+}
+
+.circle span {
+  position: absolute;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0ff;
+}
+
+.skill-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0ff;
+  transition: 0.3s;
+}
+
+.skill-label:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 15px #0ff;
+}
+
+/* PROJECT SECTION */
+
+.projects-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #111;
+  padding: 40px;
+  width: 350px;
+  margin-right: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #0ff;
+  text-align: center;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* CONTACT SECTION */
+
+.contact-details {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-details a {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-details a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0ff;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #0ff;
+  box-shadow: inset 0 0 10px #0ff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  .home-text h2 {
+    font-size: 28px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .home,
+  .about,
+  .circular-skills,
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-img img,
+  .about-img img {
+    margin-top: 30px;
+  }
+
+  .about-full,
+  .tools-full,
+  .home-text {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text h2 {
+    font-size: 24px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle span {
+    font-size: 12px;
+  }
+
+  .skill-label {
+    font-size: 14px;
+  }
+
+  .project-card {
+    padding: 15px;
+    margin-right: 0;
+  }
+}
+   
+  </style>
+</head>
+<body>
+
+  <!--Navbar-->
+
+   <nav>
+    <div class="logo"><a href="#home">Portfolio</a></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!--Home-Section-->
+
+   <section id="home" class="home">
+    <div class="home-text">
+      <h2>Hi, I'm Jaswanth</h2>
+      <p>I'm a passionate UI/UX designer dedicated to crafting clean, user-focused digital experiences. With a strong foundation in tools like Figma, Photoshop, and Illustrator, I specialize in designing intuitive interfaces that are both visually appealing and easy to use. <br><br>
+         I enjoy turning ideas into interactive prototypes and solving real-world problems through smart design. As a detail-oriented and creative thinker, I'm eager to contribute to meaningful projects and grow with a forward-thinking design team. <br><br>
+      </p>
+      <a href="resume.pdf" class="download-btn" download>Download Resume</a>
+    </div>
+    <div class="home-img">
+      <img src="jaswanth.jpg" alt="Jaswanth Hero Image" />
+    </div>
+  </section>
+
+  <!--about section-->
+  
+    <section id="about" class="about">
+    <div class="about-img">
+      <img src="pp.jpg" alt="Jaswanth Profile Picture" />
+    </div>
+    <div class="about-full">
+      <h2 class="about-me">About Me</h2>
+      <p class="intro-text">I'm an entry-level UI/UX designer with a strong passion for creating intuitive and engaging digital experiences. I specialize in designing user-centered interfaces that focus on clarity, accessibility, and simplicity. I have hands-on experience using tools like Figma, Photoshop, and Illustrator to bring ideas to life through wireframes, prototypes, and high-fidelity mockups. <br><br>I enjoy solving real-world problems through design and continuously strive to improve my skills by working on meaningful projects. Some of my projects include a travel assistant app and a home service booking application, both designed with usability and visual appeal in mind. I'm currently expanding my knowledge in frontend technologies like HTML and CSS to better collaborate with developers and build more effective design systems. <br><br>I'm enthusiastic, detail-oriented, and always open to feedback. My goal is to grow into a full-stack product designer who can contribute to impactful products that make users' lives easier.</p>
+    </div>
+    <div class="tools-full">
+      <h2 class="tools-title">Tools I Know</h2>
+      <div class="circular-skills">
+        <div class="skill-box">
+          <div class="circle" style="--percent: 90%;"><span>90%</span></div>
+          <div class="skill-label">Figma</div>
+        </div>
+        <div class="skill-box">
+          <div class="circle" style="--percent: 75%;"><span>75%</span></div>
+          <div class="skill-label">Photoshop</div>
+        </div>
+        <div class="skill-box">
+          <div class="circle" style="--percent: 60%;"><span>60%</span></div>
+          <div class="skill-label">Illustrator</div>
+        </div>
+        <div class="skill-box">
+          <div class="circle" style="--percent: 50%;"><span>50%</span></div>
+          <div class="skill-label">InDesign</div>
+        </div>
+        <div class="skill-box">
+          <div class="circle" style="--percent: 90%;"><span>90%</span></div>
+          <div class="skill-label">HTML</div>
+        </div>
+        <div class="skill-box">
+          <div class="circle" style="--percent: 85%;"><span>85%</span></div>
+          <div class="skill-label">CSS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!--projects-->
+  
+  <section id="projects">
+    <div>
+       <h2 class="projects-title">Projects</h2>
+     <div class="project-list">
+  <div class="project-card">
+    <h3><a href="easytravel.html" style="color:#0ff; text-decoration:none;">Easy Travel App</a></h3>
+    <p>Easy Travel is an all-in-one travel companion app designed in Figma, offering location tracking, smart destination suggestions, expense management, and hotel booking features. The user interface focuses on seamless navigation and a modern, intuitive design to enhance the travel experience.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="service.html" style="color:#0ff; text-decoration:none;">Home Service App</a></h3>
+    <p>Home Service Application is a user-centric app designed in Figma to simplify access to essential services like plumbing, cleaning, and electrical repairs. The interface is clean, intuitive, and optimized for fast bookings, ensuring a seamless experience for users and service providers alike.</p>
+  </div>
+  <div class="project-card">
+    <h3><a href="review.html" style="color:#0ff; text-decoration:none;">Movie Review Site</a></h3>
+    <p>Movie Review Site is a responsive UI project designed in Figma for discovering and reviewing movies and series. It features trending titles, user ratings, and top picks, all presented through a clean, modern layout focused on usability and visual appeal.</p>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!--CONTACT-->
+   
+     <section class="contact" id="contact">
+    <h2 style="text-align:center; color:#fff; text-decoration: underline; text-shadow: 0 0 10px #0ff;">Contact Me</h2>
+    <div class="contact-details">
+      <a href="mailto:jaswanth0524@gmail.com">📧 jaswanth0524@gmail.com</a>
+      <a href="tel:+916379325706">📞 +91 63793 25706</a>
+      <a href="https://www.linkedin.com/in/jaswanthgajendran24" target="_blank">🔗 LinkedIn</a>
+      <p style="color:#aaa">📍 Chennai, India</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jaswanth. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

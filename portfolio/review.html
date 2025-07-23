@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Review App Case Study</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('review.jpg') no-repeat center center/cover;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .case-study {
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 25px;
+      background: #000;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .case-study h2 {
+      color: #FF5733;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .case-study h3 {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      color: #FF5733;
+      font-size: 22px;
+    }
+
+    .case-study p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        height: 200px;
+      }
+
+      .back-button {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      .case-study {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .case-study h2 {
+        font-size: 26px;
+      }
+
+      .case-study h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .case-study {
+        margin: 15px;
+        padding: 15px;
+      }
+
+      .case-study h2 {
+        font-size: 22px;
+      }
+
+      .case-study h3 {
+        font-size: 18px;
+      }
+
+      .case-study p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Image -->
+  <div class="header">
+    <a href="main.html" class="back-button">← Back</a>
+  </div>
+
+  <!-- Case Study Content -->
+  <div class="case-study">
+    <h2>Movie Review App – Discover, Rate, and Explore Entertainment</h2>
+
+    <h3>🧭 Project Overview</h3>
+    <p>Movie lovers often struggle to find a single, clean platform that shows trending content, real user reviews, and detailed movie information. The Movie Review App solves this by combining discovery, details, and ratings in one beautiful, responsive design.</p>
+
+    <p>It’s built for everyday users — from binge-watchers to casual streamers — to quickly explore, rate, and learn more about their favorite movies and shows.</p>
+
+    <h3>🎯 Target Audience</h3>
+    <ul>
+      <li>Movie and TV enthusiasts</li>
+      <li>Casual viewers looking for trending titles</li>
+      <li>Groups of friends deciding what to watch</li>
+      <li>Anyone wanting a simplified alternative to IMDb or TMDb</li>
+    </ul>
+
+    <h3>🎨 Design Process & Research</h3>
+    <p>I analyzed IMDb, TMDb, and Rotten Tomatoes. Most of these platforms had either too much clutter or too many ads. I wanted to fix this by designing something clean, scrollable, and mobile-first.</p>
+
+    <h3>✏️ Wireframes</h3>
+    <p>Initial wireframes were drawn on paper. I tested different layouts for movie cards, info sections, and review modules before moving to Figma for the final UI.</p>
+
+    <h3>💻 Design Execution</h3>
+    <p>The project was designed entirely in <strong>Figma</strong>.</p>
+    <ul>
+      <li><strong>Color:</strong> #FF5733 – energetic, bold, and cinematic</li>
+      <li><strong>Font:</strong> Inter – clean, modern, and easy to read</li>
+      <li><strong>Layout:</strong> Card-based, modular sections for clean information flow</li>
+    </ul>
+
+    <h3>📱 Key Screens</h3>
+    <ul>
+      <li><strong>Home Page:</strong> Trending movies and series</li>
+      <li><strong>Movie Details:</strong> Summary, cast, rating, duration, genre</li>
+      <li><strong>Reviews:</strong> Star ratings, user reviews with expand feature</li>
+      <li><strong>Search & Filter:</strong> Title, genre, rating, year</li>
+      <li><strong>User Profile:</strong> Watched list, submitted reviews</li>
+    </ul>
+
+    <h3>🧩 Interactive Prototype</h3>
+    <p>The Figma prototype includes scrolling, clickable movie cards, and a review submission experience. The layout adjusts perfectly from desktop to mobile.</p>
+
+    <h3>⚠️ Challenges & Solutions</h3>
+    <p><strong>Challenge:</strong> Too much data to show in a small space</p>
+    <p><strong>Solution:</strong> Used expandable cards, collapsible reviews, and clear headings</p>
+
+    <p><strong>Challenge:</strong> Keeping it mobile-friendly without losing detail</p>
+    <p><strong>Solution:</strong> Stack layout approach with scalable cards and smart spacing</p>
+
+    <h3>🏁 Final Outcome & Learnings</h3>
+    <p>This project helped me practice designing for data-rich applications. I learned how to prioritize key content, reduce visual noise, and create layouts users can engage with daily.</p>
+
+    <ul>
+      <li>Scalable card UI for media content</li>
+      <li>Color use for emotion and category separation</li>
+      <li>Mobile-first layout decisions</li>
+    </ul>
+
+    <p><em>"This case study taught me that good UX in entertainment means delight, not just design."</em></p>
+  </div>
+
+</body>
+</html>

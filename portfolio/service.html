@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Service App Case Study</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('service.jpg') no-repeat center center/cover;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .case-study {
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 25px;
+      background: #000;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .case-study h2 {
+      color: #1E90FF;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .case-study h3 {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      color: #1E90FF;
+      font-size: 22px;
+    }
+
+    .case-study p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        height: 200px;
+      }
+
+      .back-button {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      .case-study {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .case-study h2 {
+        font-size: 26px;
+      }
+
+      .case-study h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .case-study {
+        margin: 15px;
+        padding: 15px;
+      }
+
+      .case-study h2 {
+        font-size: 22px;
+      }
+
+      .case-study h3 {
+        font-size: 18px;
+      }
+
+      .case-study p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Image -->
+  <div class="header">
+    <a href="main.html" class="back-button">← Back</a>
+  </div>
+
+  <!-- Case Study Content -->
+  <div class="case-study">
+    <h2>Home Service App – Simplifying Everyday Essentials</h2>
+
+    <h3>🧭 Project Overview</h3>
+    <p>Booking essential home services like plumbing, cleaning, and electrical repairs is often chaotic and unreliable. Many people rely on local contacts or unverified apps that lack professionalism, clarity, and scheduling flexibility.</p>
+    <p>To address this gap, I designed a streamlined mobile app that enables users to book trusted home services with just a few taps. The goal was to offer speed, simplicity, and trust — all through a clean, modern interface.</p>
+
+    <h3>🎯 Target Audience</h3>
+    <p>The app was designed with the following users in mind:</p>
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>Busy professionals with no time to call around for services</li>
+      <li>Elderly individuals who need easy-to-use digital solutions</li>
+      <li>Urban residents living in rented flats or co-living spaces</li>
+      <li>First-time movers unfamiliar with local service providers</li>
+    </ul>
+
+    <h3>🎨 Design Process & Research</h3>
+    <p>Before designing, I studied apps like <strong>UrbanClap</strong>, <strong>Housejoy</strong>, and <strong>Sulekha</strong> to identify common UX flaws: too many steps, unclear pricing, and overwhelming options.</p>
+    <p>My goal was to fix those issues by simplifying the flow and using recognizable icons and larger touch areas to help users quickly find what they need without confusion or hesitation.</p>
+
+    <h3>🧠 UX Strategy</h3>
+    <p>The app focused on these goals:</p>
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>Simple layout with minimal distractions</li>
+      <li>Quick 3-step booking flow: browse → book → confirm</li>
+      <li>Icon-based navigation for easy browsing</li>
+      <li>Mobile-first responsive design</li>
+    </ul>
+
+    <h3>✏️ Wireframing</h3>
+    <p>Initial low-fidelity wireframes were drawn on paper to explore layout and flow. I mapped the app’s key screens before moving to high-fidelity designs in Figma.</p>
+
+    <h3>💻 Design Execution</h3>
+    <p>All final UI and prototyping were done in <strong>Figma</strong>. I used a deep blue (#1E90FF) to represent trust and professionalism. The app used the <strong>Inter font</strong> for its readability and modern aesthetics. Each service category had its own custom icon and color-coded card for fast recognition.</p>
+
+    <h3>📱 Key Screens</h3>
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li><strong>Home Screen:</strong> Displays all services with category cards</li>
+      <li><strong>Service Detail Page:</strong> Shows service info, pricing, availability</li>
+      <li><strong>Booking Page:</strong> Select date/time/address, confirm the order</li>
+      <li><strong>My Bookings:</strong> View or manage current and past services</li>
+      <li><strong>Profile:</strong> Personal info, saved addresses, and payment options</li>
+    </ul>
+
+    <h3>🧩 Prototype</h3>
+    <p>A fully scrollable and clickable prototype was created in Figma. It allows users to experience the full booking flow, including service selection, booking form, and confirmation screens.</p>
+
+    <h3>⚠️ Challenges & Solutions</h3>
+    <p><strong>Challenge:</strong> Keeping the app simple for all user types (especially elderly users)</p>
+    <p><strong>Solution:</strong> I focused on large buttons, fewer fields, clear CTAs, and logical grouping. I also limited the feature set to reduce cognitive load during the booking process.</p>
+    <p><strong>Challenge:</strong> Managing design scope and avoiding feature creep</p>
+    <p><strong>Solution:</strong> I prioritized the “core 3” features first (browse → book → manage) and noted advanced features (ratings, chats, referral system) for future iterations.</p>
+
+    <h3>🏁 Final Outcome & Learnings</h3>
+    <p>This project gave me a deeper understanding of designing for utility and accessibility. I learned how to balance simplicity with function and create a consistent user experience for service-based applications.</p>
+    <p>It also helped me learn:</p>
+    <ul style="margin-left: 20px; line-height: 1.8;">
+      <li>How to break complex services into simple flows</li>
+      <li>Why visual hierarchy is critical for fast decision-making</li>
+      <li>How mobile-first design helps with layout clarity</li>
+    </ul>
+    <p><em>"This project challenged me to design not just what looks good — but what works well for everyone."</em></p>
+  </div>
+
+</body>
+</html>
